@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Book Notes By Abdul Manan</title>
+</head>
+
+<body class="montserrat-fontType flexContainer">
+    <header id="noteHeader">
+        <h1>My Notes for the book:</h1>
+        <h2>
+            <%= Note.book_name %>
+        </h2>
+        <h3>
+            Author: <%= Note.author %>
+        </h3>
+        <h4>
+            Rating : <%= Note.rating %> &NonBreakingSpace; Date of Read: <%= Note.date_of_read %>
+        </h4>
+    </header>
+    <p id="notePage">
+        <%= Note.notes %>
+    </p>
+</body>

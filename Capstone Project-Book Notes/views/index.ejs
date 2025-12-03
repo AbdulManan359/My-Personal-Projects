@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Book Notes By Abdul Manan</title>
+</head>
+
+<body class="montserrat-fontType flexContainer">
+    <div class="upperPart">
+        <header>
+            <h1>
+                <a href="http://localhost:3000/aboutme" id="linkHeading">
+                    Abdul Manan
+                </a>
+            </h1>
+        </header>
+        <section>
+            <h2>Books I’ve read</h2>
+            <p>
+                Tiny summary but detailed notes for each. Use the ISBN number to find it from your local library or
+                anywhere
+                else.
+                This page will constantly update as I read more, so bookmark it if you want to check back in a few
+                months.
+            </p>
+            <p>
+                Sorted with my top recommendations up top. Sort by <a href="http://localhost:3000/title">title</a>,
+                <a href="http://localhost:3000/newest">newest</a>, or
+                <a href="http://localhost:3000/best">best</a>.
+            </p>
+            <p>If you have any questions, you can email me.</p>
+        </section>
+        <hr />
+    </div>
+
+    <% for(let i=0;i<Notes.length;i++) {%>
+        <!-- onmouseover="addClass1()" -->
+        <div class="bookDetail1 container">
+            <div class="bookCover">
+                <img src="https://covers.openlibrary.org/b/isbn/<%=Notes[i].isbn_number%>-M.jpg" alt="Book Cover">
+            </div>
+            <div>
+                <h3 class="bookHeading">
+                    <a href="http://localhost:3000/<%= Notes[i].id%>">
+                        <%=Notes[i].book_name %>
+                    </a>
+                </h3>
+                <h4>
+                    <%=Notes[i].author%>
+                </h4>
+                <p>
+                    Date Read: <%= Notes[i].date_of_read %>
+                </p>
+                <p>
+                    How strongly I recommend it: <%=Notes[i].rating%>/10
+                </p>
+                <p>
+                    <%=(Notes[i].notes).slice(0,400) %> .....
+                </p>
+            </div>
+        </div>
+        <% } %>
+
+
+            <script src="../public/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+.montserrat-fontType {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Class given to body : flexContainer */
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-RIGHT: 15%;
+}
+
+
+/* bookDetail will have one class out of two depending upon where the cursor is*/
+/* Start  */
+.bookDetail1 {
+    border: 2px solid rgb(38, 138, 38);
+    margin-bottom: 0.5%;
+    border-radius: 25px;
+}
+
+.bookDetail2 {
+    border: 5px solid rgb(38, 138, 38);
+    margin-bottom: 0.5%;
+    border-radius: 25px;
+}
+
+.addUnderline {
+    text-decoration: underline;
+}
+
+.removeUnderline {
+    text-decoration: none;
+}
+
+/* End */
+
+/* CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+}
+
+.bookCover {
+    text-align: center;
+    padding: 5%;
+    padding-top: 8%;
+}
+
+.bookCover>img {
+    width: 80%;
+    border: 1px rgb(82, 199, 82) solid;
+    border-radius: 2%;
+}
+
+
+/* Styling related to the links */
+a:link {
+    color: rgb(82, 199, 82);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(82, 199, 82);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+#aboutId {
+    align-self: flex-start;
+    color: rgb(82, 199, 82);
+}
+
+
+#noteHeader {
+    align-self: start;
+    color: rgb(38, 138, 38);
+}
+
+#notePage {
+    border-top: 1px black solid;
+    padding-top: 2%;
+}
