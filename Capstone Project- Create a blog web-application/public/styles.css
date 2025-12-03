@@ -1,0 +1,156 @@
+/* 
+Things related to the UI of the website:
+1.Color Schemes.
+2.Fonts
+3.Effective UI Design
+4.User Experience Design
+
+
+1.My Blogs website Name is: Physics Unfolded.
+2.Main Purpose of the website: Writing blogs on the subject 'Physics'
+3.Emotions related to your brand or purpose:
+    Trust the content 
+    Teaching physics through blogging
+    Growth by learning and teaching through comments,blogs,answer/questions etc.
+    Content should be authentic and not AI-generated
+        Thus, the emotions are: trust,teaching,learning,authenticity,not an AI-generated Content.
+
+*/
+
+
+/* 
+About Color Psychology:
+
+One study found that people commonly associate certain colors with different emotions:
+
+    68% associated the color red with love
+    52% associated the color yellow with joy
+    51% associated the color black with sadness
+    50% associated the color pink with love
+    44% associated the color orange with joy
+    43% associated the color white with relief
+    39% associated the color green with contentment
+    36% associated the color brown with disgust
+    35% associated the color blue with feelings of relief
+    25% associated the color purple with pleasure
+
+Colors that might be useful for our website designing:
+     Brown often can be used to signify nature and provide a calming feel to designs.Different neutral 
+     brown shades can work together to create a sophisticated natural look for sustainable brands
+
+     Green is synonymous with nature and growth. It’s often used to create a sense of peace and harmony, 
+     but a darker version of the color can also signify wealth and prestige.Green is a great choice for 
+     brands that want to portray a healing and wholesome outlook or promote environmentally friendly 
+     products.
+
+     White exudes purity, wholesomeness, and clarity, and is essential to most web pages. It provides a 
+     fresh, clean feel as well as a sophisticated contrast to bright colors on the page. Always include 
+     empty white space around your content so that customers don’t feel boxed in.
+
+     Purple has long been associated with royalty, power, and affluence, but it can also represent 
+     imagination and spirituality. It’s often used to inspire introspection and deeper thoughts, which 
+     can lead to positive thinking around purchases. There’s also a sense of calm about the color 
+     purple—it can evoke peace and tranquility, and highlight a superior version of a product
+
+     Blue tones convey feelings of trust, peace, and productivity. They promote loyalty and integrity, 
+     which is why blue is often seen in branding for banks and legal firms. Using the color blue on your 
+     site can create a feeling of space and stability. However, too much navy can seem conservative—so, 
+     if you’re selling a fun range of products, stick to more pale, brighter shades.
+
+     Gray is usually connected with seriousness and is a firm favorite for people who don’t want to stand 
+     out with lurid colors. The right shades of gray can serve as a great backdrop for other more vibrant
+     colors, such as orange, red, and royal blue.
+
+
+Important:
+    Color palettes should be choosed by keeping in mind that "What message I am trying to convey to the
+        users?
+
+How many colors should be used in designing of the website?
+    To start, I recommend choosing three colors for your palette: a main (or primary) color, secondary 
+    color, and accent color. Then, use the 60/30/10 rule to apply these colors in your website design. 
+    According to this rule, 60% of the color used should be the main color, 30% the secondary color, and 
+    10% the accent color.
+        There is also 70/20/10 and 80/20 rules for this purpose.
+
+
+
+The selected colors are:
+    Blue: Because it is associated with trust,peace and productivity
+    Green: Because it is associated with nature and growth
+    White: Because it is associated with purity, wholesomeness and clarity
+
+        Green: #0DE602 
+            Analogous: #6DE602 #02E646
+        Blue: #00CFEB
+            Analogous: #0CEBBB #0085EB
+        White: white
+
+
+
+*/
+
+
+/* Color after mixing all of the above colors is: #53ba93 */
+
+.roboto-fontStyle {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+
+
+.cAlign {
+    text-align: center;
+}
+
+.smallBorder {
+    border: 0.5px solid #0d6efd;
+    border-radius: 6px;
+}
+
+#lgOtBtn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerMargin1 {
+    margin-top: 5%;
+}
+
+.footerMargin2 {
+    margin-top: 8.8%;
+}
+
+.inlineDsp {
+    display: inline;
+}
+
+
+.signInForm {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+}
+
+.blogPostImage img {
+    height: 70vh;
+    width: 100vw;
+}
+
+
+/* Buttons Classes -Start */
+
+
+/* Buttons Classes -End */
